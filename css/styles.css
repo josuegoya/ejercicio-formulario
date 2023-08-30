@@ -1,0 +1,178 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: 'Inter', sans-serif;
+}
+
+header {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+header>div {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background-color: #00669F;
+  color: #fff;
+}
+
+img {
+  width: 99px;
+  height: 74px;
+}
+
+nav {
+  width: 100%;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  background-color: #001D2D;
+  color: #fff;
+  padding: 8px;
+}
+
+.discount {
+  width: 100%;
+  padding: 5px;
+  background-color: #1CD1B0;
+}
+
+main {
+  width: 100%;
+  max-width: 954px;
+  margin: 20px auto;
+  padding: 25px;
+  background-color: #00669F;
+  border-radius: 49px;
+  color: #fff;
+}
+
+h2 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 40px;
+}
+
+p.subtitle {
+  font-size: 20px;
+  text-align: center;
+  margin: 10px;
+}
+
+form {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+fieldset {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  border: none;
+  font-size: 20px;
+}
+
+.first-field {
+  width: 100%;
+  max-width: 343px;
+  height: 60px;
+  border-radius: 15px;
+  border: none;
+  padding: 10px;
+  color: grey;
+  margin: 10px 0;
+}
+
+.photo>div {
+  width: 100%;
+  height: 60px;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+textarea {
+  width: 100%;
+  max-width: 343px;
+  height: 100%;
+  font-family: Inter, sans-serif;
+  padding: 10px;
+  border-radius: 15px;
+  margin: 10px 0;
+}
+
+form>div {
+  width: 50%;
+  /* border: 1px solid #ccc; */
+}
+
+form>div>fieldset {
+  margin: 8px 0;
+  border: none;
+}
+
+form>div>fieldset div {
+  font-size: 16px;
+}
+
+form>div>fieldset legend {
+  margin-bottom: 5px;
+}
+
+button {
+  width: 100%;
+  max-width: 466px;
+  height: 87px;
+  margin: 0 auto;
+  margin-top: 15px;
+  border: none;
+  border-radius: 23px;
+  font-size: 40px;
+  font-weight: 700;
+  background-color: #1CD1B0;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #001D2D;
+  color: #fff;
+}
+
+hr {
+  border: .5px solid #ccc;
+  background-color: black;
+  margin: 20px 0;
+}
+
+footer {
+  width: 100%;
+  padding: 20px;
+  background-color: #00669F;
+  text-align: center;
+  color: #fff;
+}

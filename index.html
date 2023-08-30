@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <p class="discount">20% de descuento en todos los productos</p>
+
+      <div>
+        <img src="./img/Logo.png" alt="logo" />
+  
+        <h1 class="name">Nombre Tienda</h1>
+      </div>
+
+      <nav>
+        <ul class="menu">
+          <li>Contacto</li>
+          <li>Registrarme</li>
+          <li>Ingresar</li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h2 class="title">Añade tu super</h2>
+
+      <p class="subtitle">Agrega tu personaje favorito completando las opciones</p>
+
+      <form action="">
+        <fieldset>
+          <label for="name">*Nombre</label>
+          <input type="text" id="name" class="first-field"/>
+        </fieldset>
+
+        <fieldset>
+          <label for="species">*Especies</label>
+          <select id="species" class="first-field">
+            <option selected>Especie</option>
+          </select>
+        </fieldset>
+
+        <fieldset>
+          <label for="date">Fecha</label>
+          <input type="date" id="date" class="first-field"/>
+        </fieldset>
+
+        <fieldset class="photo">
+          <label for="add-photo">Agregar foto</label>
+          <div>
+            <input type="file" id="add-photo" />
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <textarea
+            name="description"
+            id="description"
+            placeholder="Descripción"
+          ></textarea>
+        </fieldset>
+
+        <div>
+          <fieldset>
+            <legend>Poderes</legend>
+
+            <div>
+              <input type="checkbox" id="fly" />
+              <label for="fly">Volar</label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="super-intelligence" />
+              <label for="super-intelligence">Super inteligencia</label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="laser-beam" />
+              <label for="laser-beam">Vista de rayo láser</label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="wallet" />
+              <label for="wallet">Billetera gorda</label>
+            </div>
+          </fieldset>
+
+          <hr />
+
+          <fieldset>
+            <legend>Tipo de personaje</legend>
+
+            <div>
+              <input type="radio" id="hero-gen" />
+              <label for="hero-gen">Héroe / Heroina</label>
+            </div>
+
+            <div>
+              <input type="radio" id="villain-gen" />
+              <label for="villain-gen">Villano / Villana</label>
+            </div>
+          </fieldset>
+        </div>
+
+        <button type="button">Añadir</button>
+      </form>
+    </main>
+
+    <footer>
+      <p>Todos los derechos reservados a FRONT END 1</p>
+    </footer>
+  </body>
+</html>
